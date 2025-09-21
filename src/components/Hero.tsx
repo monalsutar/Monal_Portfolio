@@ -28,7 +28,7 @@ const Hero = () => {
               onClick={() => {
                 // Download resume functionality
                 const link = document.createElement('a');
-                link.href = '/public/Monal_Sutar_Resume.pdf'; // You would add the actual resume file
+                link.href = '/resume.pdf'; // You would add the actual resume file
                 link.download = 'Monal_Sutar_Resume.pdf';
                 link.click();
               }}
