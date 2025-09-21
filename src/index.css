@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional Developer Portfolio Design System */
+
+@layer base {
+  :root {
+    /* Professional Dark Theme */
+    --background: 220 26% 7%;
+    --foreground: 210 20% 98%;
+
+    --card: 220 23% 9%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 220 23% 9%;
+    --popover-foreground: 210 20% 98%;
+
+    /* Professional Blue Primary */
+    --primary: 217 91% 60%;
+    --primary-foreground: 220 26% 7%;
+    --primary-glow: 217 91% 70%;
+
+    --secondary: 220 23% 12%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 220 23% 12%;
+    --muted-foreground: 215 15% 65%;
+
+    --accent: 262 83% 68%;
+    --accent-foreground: 220 26% 7%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 220 23% 15%;
+    --input: 220 23% 12%;
+    --ring: 217 91% 60%;
+
+    /* Professional Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(262 83% 68%));
+    --gradient-secondary: linear-gradient(135deg, hsl(220 23% 9%), hsl(220 23% 12%));
+    --gradient-accent: linear-gradient(135deg, hsl(262 83% 68%), hsl(217 91% 60%));
+
+    /* Professional Shadows */
+    --shadow-primary: 0 10px 40px -10px hsl(217 91% 60% / 0.3);
+    --shadow-card: 0 8px 32px -8px hsl(220 26% 7% / 0.4);
+    --shadow-glow: 0 0 40px hsl(217 91% 70% / 0.2);
+
+    /* Typography */
+    --font-display: 'Inter', system-ui, sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    font-family: var(--font-body);
+    background: hsl(var(--background));
+    background-image: 
+      radial-gradient(circle at 25% 25%, hsl(217 91% 60% / 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, hsl(262 83% 68% / 0.05) 0%, transparent 50%);
+  }
+
+  /* Section Styling */
+  .section {
+    @apply py-20 px-4 md:px-8;
+  }
+
+  .section-container {
+    @apply max-w-6xl mx-auto;
+  }
+
+  /* Typography */
+  .heading-xl {
+    @apply text-4xl md:text-6xl font-bold bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+    font-family: var(--font-display);
+  }
+
+  .heading-lg {
+    @apply text-3xl md:text-5xl font-bold text-foreground;
+    font-family: var(--font-display);
+  }
+
+  .heading-md {
+    @apply text-2xl md:text-3xl font-semibold text-foreground;
+    font-family: var(--font-display);
+  }
+
+  .heading-sm {
+    @apply text-xl md:text-2xl font-medium text-foreground;
+    font-family: var(--font-display);
+  }
+
+  /* Professional Cards */
+  .card-professional {
+    @apply bg-card border border-border rounded-[var(--radius)] p-6;
+    background: hsl(var(--card));
+    box-shadow: var(--shadow-card);
+    transition: var(--transition-smooth);
+  }
+
+  .card-professional:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-primary);
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply px-8 py-4 rounded-[var(--radius)] font-semibold transition-all duration-300;
+    background: var(--gradient-primary);
+    color: hsl(var(--primary-foreground));
+    box-shadow: var(--shadow-primary);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
+  }
+
+  .btn-outline {
+    @apply px-8 py-4 rounded-[var(--radius)] font-semibold border-2 transition-all duration-300;
+    border-color: hsl(var(--primary));
+    color: hsl(var(--primary));
+    background: transparent;
+  }
+
+  .btn-outline:hover {
+    background: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+    transform: translateY(-2px);
+  }
+
+  /* Animations */
+  .fade-in {
+    animation: fade-in 0.6s ease-out forwards;
+  }
+
+  .fade-in-delay {
+    animation: fade-in 0.6s ease-out 0.3s forwards;
+    opacity: 0;
+  }
+
+  .slide-up {
+    animation: slide-up 0.6s ease-out forwards;
+  }
+
+  /* Skill Tags */
+  .skill-tag {
+    @apply px-4 py-2 rounded-full text-sm font-medium border transition-all duration-300;
+    background: hsl(var(--secondary));
+    border-color: hsl(var(--border));
+    color: hsl(var(--secondary-foreground));
+  }
+
+  .skill-tag:hover {
+    background: hsl(var(--accent));
+    color: hsl(var(--accent-foreground));
+    transform: translateY(-2px);
+  }
+
+  /* Timeline */
+  .timeline-item {
+    @apply relative pl-8 pb-8;
+  }
+
+  .timeline-item::before {
+    content: '';
+    @apply absolute left-0 top-2 w-4 h-4 rounded-full;
+    background: var(--gradient-primary);
+  }
+
+  .timeline-item::after {
+    content: '';
+    @apply absolute left-2 top-6 w-0.5 h-full;
+    background: hsl(var(--border));
+  }
+
+  .timeline-item:last-child::after {
+    display: none;
+  }
+}
+
+@layer utilities {
+  /* Custom Keyframes */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes glow {
+    0%, 100% {
+      box-shadow: 0 0 20px hsl(217 91% 60% / 0.2);
+    }
+    50% {
+      box-shadow: 0 0 40px hsl(217 91% 60% / 0.4);
+    }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
