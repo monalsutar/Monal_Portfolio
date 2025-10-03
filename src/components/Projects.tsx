@@ -1,8 +1,3 @@
-const carGameImg = "/public/images/cargame.png";
-const memoryGameImg = "/public/images/memorygame.png";
-const ticTacToeImg = "/public/images/tictactoe.png";
-
-
 const Projects = () => {
   const projects = [
     {
@@ -57,19 +52,19 @@ const Projects = () => {
     {
       title: "Car Game",
       
-      image: carGameImg, // 👉 put your image in public/images/
+      image: "https://static.vecteezy.com/system/resources/previews/016/772/817/non_2x/formula-racing-sport-car-reach-on-race-circuit-the-finish-line-cartoon-illustration-to-win-the-championship-in-flat-style-hand-drawn-templates-design-vector.jpg", // 👉 put your image in public/images/
       playLink: "https://car-game-w2dz.onrender.com", // your deployed game link
     },
     {
       title: "Memory Game",
       
-      image: memoryGameImg,
+      image: "https://miro.medium.com/0*kQtZdJ365jG563Yg.jpg",
       playLink: "https://memory-game-6y9f.onrender.com", // replace with hosted link if deployed
     },
     {
       title: "Tic Tac Toe",
       
-      image: ticTacToeImg,
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWqtJGwEXzcpvMxCZn-93XnnwUbp4iIkrl2w&s",
       playLink: "https://tic-tac-toe-game-monal.onrender.com", // replace with hosted link if deployed
     },
   ];
