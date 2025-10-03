@@ -52,19 +52,19 @@ const Projects = () => {
     {
       title: "Car Game",
       
-      image: "/public/cargame.png", // 👉 put your image in public/images/
+      image: "/cargame.png", // 👉 put your image in public/images/
       playLink: "https://car-game-w2dz.onrender.com", // your deployed game link
     },
     {
       title: "Memory Game",
       
-      image: "/public/memorygame.png",
+      image: "/memorygame.png",
       playLink: "https://memory-game-6y9f.onrender.com", // replace with hosted link if deployed
     },
     {
       title: "Tic Tac Toe",
       
-      image: "/public/tictactoe.png",
+      image: "/tictactoe.png",
       playLink: "https://tic-tac-toe-game-monal.onrender.com", // replace with hosted link if deployed
     },
   ];
