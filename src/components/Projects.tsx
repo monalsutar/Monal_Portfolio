@@ -47,6 +47,28 @@ const Projects = () => {
     }
   ];
 
+  // 🎮 New Section: Games Developed using AI
+  const games = [
+    {
+      title: "Car Game",
+      
+      image: "/public/cargame.png", // 👉 put your image in public/images/
+      playLink: "https://car-game-w2dz.onrender.com", // your deployed game link
+    },
+    {
+      title: "Memory Game",
+      
+      image: "/public/memorygame.png",
+      playLink: "https://memory-game-6y9f.onrender.com", // replace with hosted link if deployed
+    },
+    {
+      title: "Tic Tac Toe",
+      
+      image: "/public/tictactoe.png",
+      playLink: "https://tic-tac-toe-game-monal.onrender.com", // replace with hosted link if deployed
+    },
+  ];
+
   const getTechStackColor = (tech: string) => {
     const colorMap: { [key: string]: string } = {
       'MongoDB': 'bg-green-500/10 text-green-400 border-green-500/20',
@@ -168,6 +190,54 @@ const Projects = () => {
             </div>
           ))}
         </div>
+
+
+        {/* 🎮 Games Section */}
+        <div className="text-center mt-20 mb-12">
+          <h2 className="heading-lg mb-6">Games Developed using AI</h2>
+          <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full"></div>
+          <p className="text-muted-foreground mt-6 max-w-2xl mx-auto">
+            A showcase of AI-powered games I’ve built to combine creativity,
+            logic, and fun interactive experiences.
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
+          {games.map((game, index) => (
+            <div
+              key={index}
+              className="card-professional group"
+              style={{ animationDelay: `${index * 0.2}s` }}
+            >
+              {/* Game Image */}
+              <div className="w-full h-40 mb-4 overflow-hidden rounded-xl">
+                <img
+                  src={game.image}
+                  alt={game.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+
+              {/* Game Title */}
+              <h3 className="text-xl font-semibold text-center group-hover:text-primary transition-colors duration-300 mb-5">
+                {game.title}
+              </h3>
+
+              
+
+              {/* Play Button */}
+              <a
+                href={game.playLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block py-2 px-4 bg-primary/10 text-primary rounded-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300 text-sm font-medium text-center"
+              >
+                🎮 Play Now
+              </a>
+            </div>
+          ))}
+        </div>
+
 
         {/* Call to Action */}
         <div className="text-center mt-12">
