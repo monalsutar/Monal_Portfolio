@@ -1,73 +1,142 @@
-# Welcome to your Lovable project
+# Monal Portfolio
 
-## Project info
+A personal portfolio website showcasing my projects, skills, and creative work (web apps, mobile apps, AI-powered games, etc.). Built with React, TypeScript, Tailwind CSS, and shadcn-ui.
 
-**URL**: https://lovable.dev/projects/53520b55-9e43-47de-8f30-2cdf337246b3
+---
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+- Responsive and modern UI  
+- Showcase of **projects** with details, tech stacks, and links  
+- Section for **games built using AI** with images and *Play Now* links  
+- Animated transitions, hover effects, and dark/light mode support  
+- Easy to extend and maintain  
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/53520b55-9e43-47de-8f30-2cdf337246b3) and start prompting.
+## 🧰 Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+| Category      | Technologies / Libraries                              |
+|---------------|--------------------------------------------------------|
+| Framework     | React, Vite, TypeScript                                |
+| Styling       | Tailwind CSS, shadcn-ui                                |
+| Animations    | CSS transitions / custom utilities                     |
+| Deployment    | (Your deployment platform, e.g., Vercel, Netlify, GitHub Pages) |
+| Others        | (Add any additional tools, e.g. ESLint, Prettier)     |
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📁 Project Structure
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
 ```
 
-**Edit a file directly in GitHub**
+/
+├── public/                     # Static assets (images, favicon, etc.)
+├── src/
+│   ├── components/             # Reusable UI components
+│   ├── pages/                  # Page-level components or sections
+│   ├── styles/                 # Global styles, Tailwind config, etc.
+│   └── index.tsx, App.tsx      # Entry point
+├── README.md
+├── package.json
+├── tsconfig.json
+├── tailwind.config.ts
+└── vite.config.ts
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+````
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🛠️ Installation & Setup
 
-## What technologies are used for this project?
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/monalsutar/Monal_Portfolio.git
+   cd Monal_Portfolio
 
-This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+2. **Install dependencies**
 
-## How can I deploy this project?
+   ```bash
+   npm install
+   ```
 
-Simply open [Lovable](https://lovable.dev/projects/53520b55-9e43-47de-8f30-2cdf337246b3) and click on Share -> Publish.
+3. **Start development server**
 
-## Can I connect a custom domain to my Lovable project?
+   ```bash
+   npm run dev
+   ```
 
-Yes, you can!
+4. Open your browser and go to `http://localhost:5173` (or as shown in the console) to see the site in action.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 📸 Screenshots / Preview
+
+*(You can insert images here — e.g., portfolio home, project section, games section, responsive views.)*
+
+---
+
+## 🧩 How to Add New Projects or Games
+
+### Adding a New Project
+
+1. Open `src/components/Projects.tsx` (or wherever your projects array is defined).
+2. Add a new object to the `projects` array with the following shape:
+
+   ```ts
+   {
+     title: "Project Name",
+     description: "What it does",
+     techStack: ["React", "Node.js", ...],
+     category: "Web Application" | "Mobile App" | ...,
+     status: "Completed" | "In Progress",
+     detailsLink: "https://…",
+     repoLink: "https://…"
+   }
+   ```
+
+### Adding a New Game (AI Games Section)
+
+1. In the same file (or a separate file if you separated it), add to the `games` array:
+
+   ```ts
+   {
+     title: "Game Name",
+     description: "Short game description",
+     image: "/images/game-image.png",
+     playLink: "https://…"
+   }
+   ```
+
+2. Add the corresponding image in `public/images/` folder.
+
+3. The UI will automatically show the game with the image, title centered, and a “Play Now” button.
+
+---
+
+## 🔗 Links
+
+* Portfolio Live Site: *(Your deployed URL, e.g. [https://monalsutar.github.io](https://monalsutar.github.io))*
+* GitHub Profile: [monalsutar](https://github.com/monalsutar)
+* Projects & Games source code: in this repo
+
+---
+
+## 📬 Contact
+
+* LinkedIn : https://monal-portfolio.onrender.com/
+* Git : https://github.com/monalsutar
+* Youtube : https://youtube.com/@programming_the_life_monal?si=Dxjd0y1Ldc5crFI8
+* Portfolio : https://monal-portfolio.onrender.com/
+
+
+---
+
+## 📝 License
+
+This project is open source and available under the **[MIT License](LICENSE)** (you can include a `LICENSE` file).
+
+---
+
+Thanks for checking out my portfolio! 🙂
