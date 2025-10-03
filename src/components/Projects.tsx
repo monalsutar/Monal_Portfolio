@@ -1,3 +1,8 @@
+const carGameImg = "/public/images/cargame.png";
+const memoryGameImg = "/public/images/memorygame.png";
+const ticTacToeImg = "/public/images/tictactoe.png";
+
+
 const Projects = () => {
   const projects = [
     {
@@ -52,19 +57,19 @@ const Projects = () => {
     {
       title: "Car Game",
       
-      image: "/cargame.png", // 👉 put your image in public/images/
+      image: carGameImg, // 👉 put your image in public/images/
       playLink: "https://car-game-w2dz.onrender.com", // your deployed game link
     },
     {
       title: "Memory Game",
       
-      image: "/memorygame.png",
+      image: memoryGameImg,
       playLink: "https://memory-game-6y9f.onrender.com", // replace with hosted link if deployed
     },
     {
       title: "Tic Tac Toe",
       
-      image: "/tictactoe.png",
+      image: ticTacToeImg,
       playLink: "https://tic-tac-toe-game-monal.onrender.com", // replace with hosted link if deployed
     },
   ];
