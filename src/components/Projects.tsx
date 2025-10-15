@@ -1,6 +1,15 @@
 const Projects = () => {
   const projects = [
     {
+      title: "Bill Desk Web App",
+      description: "Developed a full stack billing and invoicing web application using Next.js and MongoDB, featuring product management, PDF invoice generation, and email integration for merchants, designed for scalability and efficient billing operations.",
+      techStack: ["MongoDB", "Next.js", "Node.js"],
+      category: "Web Application",
+      status: "Completed",
+      detailsLink: "https://next-app-1-sand.vercel.app/",   // 👈 full details
+      repoLink: "https://github.com/monalsutar/Next-app-1"    // 👈 source code or another link
+    },
+    {
       title: "Communion Hub",
       description: "A comprehensive MERN Stack web application designed for community management and communication. Features real-time messaging, user authentication, and administrative controls.",
       techStack: ["MongoDB", "Express.js", "React.js", "Node.js"],
@@ -10,7 +19,7 @@ const Projects = () => {
       repoLink: "https://github.com/monalsutar/CommunionHub-MERN"    // 👈 source code or another link
     },
     {
-      title: "Bill Desk",
+      title: "Bill Desk Flutter App",
       description: "A mobile application developed with Flutter for managing bills and expenses. Includes features for bill tracking, payment reminders, and financial analytics.",
       techStack: ["Flutter", "Dart", "Firebase"],
       category: "Mobile Application",
@@ -83,7 +92,7 @@ const Projects = () => {
       'HTML': 'bg-red-500/10 text-red-400 border-red-500/20',
       'CSS': 'bg-blue-500/10 text-blue-400 border-blue-500/20',
       'JavaScript': 'bg-yellow-600/10 text-yellow-400 border-yellow-600/20',
-      'PHP': 'bg-indigo-500/10 text-indigo-400 border-indigo-500/20',
+      'Next.js': 'bg-indigo-500/10 text-indigo-400 border-indigo-500/20',
 
     };
     return colorMap[tech] || 'bg-primary/10 text-primary border-primary/20';

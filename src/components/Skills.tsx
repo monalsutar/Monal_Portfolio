@@ -7,7 +7,7 @@ const Skills = () => {
     },
     {
       category: "Frameworks & Tools",
-      skills: ["Android SDK", "Flutter", "Xcode", "Android Studio", "Node.js", "React.js"],
+      skills: ["Android SDK", "Flutter", "Xcode", "Android Studio", "Node.js", "React.js", "Next.js"],
       color: "accent"
     },
     {
