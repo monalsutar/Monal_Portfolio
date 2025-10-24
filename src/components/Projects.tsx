@@ -1,11 +1,11 @@
 const Projects = () => {
   const projects = [
     {
-      title: "Bill Desk Web App",
+      title: "Quick Bill Web App",
       description: "Developed a full stack billing and invoicing web application using Next.js and MongoDB, featuring product management, PDF invoice generation, and email integration for merchants, designed for scalability and efficient billing operations.",
       techStack: ["MongoDB", "Next.js", "Node.js"],
       category: "Web Application",
-      status: "Completed",
+      status: "Working",
       detailsLink: "https://next-app-1-sand.vercel.app/",   // 👈 full details
       repoLink: "https://github.com/monalsutar/Next-app-1"    // 👈 source code or another link
     },
