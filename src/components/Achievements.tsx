@@ -36,6 +36,20 @@ const Achievements = () => {
       color: "text-red-400"
     },
     {
+      title: "July 2025 Badge - Leetcode",
+      organization: "LeetCode Platform",
+      type: "Coding Achievement",
+      icon: "star",
+      color: "text-yellow-400"
+    },
+    {
+      title: "Oct 2025 Badge - Leetcode",
+      organization: "LeetCode Platform",
+      type: "Coding Achievement",
+      icon: "star",
+      color: "text-yellow-400"
+    },
+    {
       title: "Beyond Resume",
       organization: "KIT College, Kolhapur",
       type: "Recognition",
@@ -146,11 +160,11 @@ const Achievements = () => {
               <div className="text-muted-foreground text-sm">Participations</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-accent mb-2">111+</div>
+              <div className="text-3xl font-bold text-accent mb-2">160+</div>
               <div className="text-muted-foreground text-sm">Days Coding</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">220+</div>
+              <div className="text-3xl font-bold text-primary mb-2">275+</div>
               <div className="text-muted-foreground text-sm">Problems Solved</div>
             </div>
             <div className="text-center">

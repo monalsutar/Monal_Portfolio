@@ -2,7 +2,7 @@ const Projects = () => {
   const projects = [
     {
       title: "Quick Bill Web App",
-      description: "Developed a full stack billing and invoicing web application using Next.js and MongoDB, featuring product management, PDF invoice generation, and email integration for merchants, designed for scalability and efficient billing operations.",
+      description: "Developed a full-stack billing and invoicing web app with Next.js and MongoDB. Features include product management, admin panel, Google sign-in, PDF invoice generation, email delivery of bill, print the bill and payment integration via Razorpay.",
       techStack: ["MongoDB", "Next.js", "Node.js"],
       category: "Web Application",
       status: "Working",
@@ -59,16 +59,22 @@ const Projects = () => {
   // 🎮 New Section: Games Developed using AI
   const games = [
     {
-      title: "Car Game",
+      title: "Maths Number Game",
       
-      image: "https://static.vecteezy.com/system/resources/previews/016/772/817/non_2x/formula-racing-sport-car-reach-on-race-circuit-the-finish-line-cartoon-illustration-to-win-the-championship-in-flat-style-hand-drawn-templates-design-vector.jpg", // 👉 put your image in public/images/
-      playLink: "https://car-game-w2dz.onrender.com", // your deployed game link
+      image: "https://www.shutterstock.com/shutterstock/photos/1912506373/display_1500/stock-photo-scattered-wooden-plaques-with-numbers-and-signs-flat-lay-teaching-material-in-mathematics-1912506373.jpg", // 👉 put your image in public/images/
+      playLink: "https://maths-number-game.vercel.app/", // your deployed game link
     },
     {
       title: "Memory Game",
       
       image: "https://miro.medium.com/0*kQtZdJ365jG563Yg.jpg",
       playLink: "https://memory-game-6y9f.onrender.com", // replace with hosted link if deployed
+    },
+    {
+      title: "Car Game",
+      
+      image: "https://static.vecteezy.com/system/resources/previews/016/772/817/non_2x/formula-racing-sport-car-reach-on-race-circuit-the-finish-line-cartoon-illustration-to-win-the-championship-in-flat-style-hand-drawn-templates-design-vector.jpg", // 👉 put your image in public/images/
+      playLink: "https://car-game-w2dz.onrender.com", // your deployed game link
     },
     {
       title: "Tic Tac Toe",
